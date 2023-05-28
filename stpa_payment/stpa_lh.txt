@@ -1,0 +1,17 @@
+MOOSE : Matlab Tool for STPA Evaluation
+ 
+Report created on : 26-Mar-2023 09:25:22
+ 
+Table 1: The Losses identified are
+Loss 01 | Loss of Money
+Loss 02 | Loss of Reputation
+Loss 03 | Loss of Certification/Permissions
+Loss 04 | Loss to Organisation
+ 
+Table 2: The Hazards identified are
+Loss 01|Hazard 01| | Wrong receipient
+Loss 02, Loss 01|Hazard 02| | Invalid amount sent/received
+Loss 02, Loss 03, Loss 04|Hazard 03| | non compliance of local regulations
+Loss 02, Loss 01, Loss 04|Hazard 04| | Money provided to Bad donatee
+Loss 04|Hazard 05| | Low use of the app
+Loss 02, Loss 03|Hazard 05| | Delays in Transaction

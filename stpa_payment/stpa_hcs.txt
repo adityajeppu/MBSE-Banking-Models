@@ -1,0 +1,66 @@
+MOOSE : Matlab Tool for STPA Evaluation
+ 
+Report created on : 26-Mar-2023 19:47:01
+ 
+Responsibility  |Not providing causes hazard |Providing causes hazard |Too early, too late, out of order |Stopped too soon, applied too long 
+Responsible Block : User| | | |
+Provide feedback on the app|[#H5] Not providing any issues with app | [#H5] Providing wrong feedback on the app | [#H5] Providing feedback on old issues already fixed | [#H5] Providing the same feedback on realised issue
+Provide recipient data and amount|[#H5] Not providing data in the app | [#H1][#H2] Providing incorrect data | [#H6] Providing data when unpromted | [#H6] Stopped data entry too soon (scanning quickly)
+Provide rating for donatee|[#H4][#H5] Not providing details of bad donatee  | [#H5] Providing wrong feedback for donatee | [#H4] Providing feedback late and list late | [#H4][#H3] providing donatee list and removing within month
+Responsible Block : Money Transfer| | | |
+Send transaction details to server|[#H6][#H5] Not providing the request for transaction  | [#H1][#H2][#H6] Providing incorrect/unauthorised data to server | [#H6][#H5] Providing request late or early without authorisation | [#H6] Continuously send request, or stop request too soon
+Responsible Block : Donatee Addition| | | |
+Send donatee list|[#H5][#H4] Not providing list approved by user | [#H4][#H5] Providing a list not approved by the user | [#H6][#H5] Providing donatee list too late after user approves | [#H5] Updated donatee list not refreshed/old list continuously sent
+Responsible Block : Government Dept / IT| | | |
+Provide guidelines to follow|[#H3][#H5] Not providing guidelines to follow |  | [#H3] Providing guidelines too late | 
+Audit the system|[#H3][#H5] Not providing audits of system | [#H6] Providing audits which affect business processes | [#H3] providing audit too late | 
+Responsible Block : Server Controller| | | |
+Monitoring metrics|[#H5][#H3] Not providing metrics for app improvement |  | [#H5] Providing metrics too late | 
+Check receipient correctness|[#H1] Not checking the correct recipient | [#H1] Providing a check for incorrect recipient | [#H6][#H1] Checking the recipient requests out of order | [#H6] Request for check timed out or stopped too soon
+Check amount availability|[#H6][#H2] Not providing check for balance before withdraw | [#H6][#H2] Providing wrong check for balance | [#H6][#H2] Providing check too late, out of order | [#H6][#H2] Providing check of balance too late
+Create audit reports|[#H3] Not providing audit reports for analysis | [#H3] Providing incorrect audit report | [#H3] Providing reports too late | 
+Perform delivery of donations|[#H3][#H5] Not providing donation money to donatees | [#H5][#H4] Money provided to wrong donatees, or more than once | [#H5][#H6] Donation money provided too late/without enough balance | [#H4][#H5][#H2] Donation money provided to old donatees without updation
+ 
+Make a table and provide constraints for the UCA(s)
+User | Provide feedback on the app| 1 | NP: [#H5] Not providing any issues with app | 
+User | Provide feedback on the app| 2 | P: [#H5] Providing wrong feedback on the app | 
+User | Provide feedback on the app| 3 | TE: [#H5] Providing feedback on old issues already fixed | 
+User | Provide feedback on the app| 4 | S: [#H5] Providing the same feedback on realised issue | 
+User | Provide recipient data and amount| 5 | NP: [#H5] Not providing data in the app | 
+User | Provide recipient data and amount| 6 | P: [#H1][#H2] Providing incorrect data | 
+User | Provide recipient data and amount| 7 | TE: [#H6] Providing data when unpromted | 
+User | Provide recipient data and amount| 8 | S: [#H6] Stopped data entry too soon (scanning quickly) | 
+User | Provide rating for donatee| 9 | NP: [#H4][#H5] Not providing details of bad donatee  | 
+User | Provide rating for donatee| 10 | P: [#H5] Providing wrong feedback for donatee | 
+User | Provide rating for donatee| 11 | TE: [#H4] Providing feedback late and list late | 
+User | Provide rating for donatee| 12 | S: [#H4][#H3] providing donatee list and removing within month | 
+Money Transfer | Send transaction details to server| 13 | NP: [#H6][#H5] Not providing the request for transaction  | 
+Money Transfer | Send transaction details to server| 14 | P: [#H1][#H2][#H6] Providing incorrect/unauthorised data to server | 
+Money Transfer | Send transaction details to server| 15 | TE: [#H6][#H5] Providing request late or early without authorisation | 
+Money Transfer | Send transaction details to server| 16 | S: [#H6] Continuously send request, or stop request too soon | 
+Donatee Addition | Send donatee list| 17 | NP: [#H5][#H4] Not providing list approved by user | 
+Donatee Addition | Send donatee list| 18 | P: [#H4][#H5] Providing a list not approved by the user | 
+Donatee Addition | Send donatee list| 19 | TE: [#H6][#H5] Providing donatee list too late after user approves | 
+Donatee Addition | Send donatee list| 20 | S: [#H5] Updated donatee list not refreshed/old list continuously sent | 
+Government Dept / IT | Provide guidelines to follow| 21 | NP: [#H3][#H5] Not providing guidelines to follow | 
+Government Dept / IT | Provide guidelines to follow| 22 | TE: [#H3] Providing guidelines too late | 
+Government Dept / IT | Audit the system| 23 | NP: [#H3][#H5] Not providing audits of system | 
+Government Dept / IT | Audit the system| 24 | P: [#H6] Providing audits which affect business processes | 
+Government Dept / IT | Audit the system| 25 | TE: [#H3] providing audit too late | 
+Server Controller | Monitoring metrics| 26 | NP: [#H5][#H3] Not providing metrics for app improvement | 
+Server Controller | Monitoring metrics| 27 | TE: [#H5] Providing metrics too late | 
+Server Controller | Check receipient correctness| 28 | NP: [#H1] Not checking the correct recipient | 
+Server Controller | Check receipient correctness| 29 | P: [#H1] Providing a check for incorrect recipient | 
+Server Controller | Check receipient correctness| 30 | TE: [#H6][#H1] Checking the recipient requests out of order | 
+Server Controller | Check receipient correctness| 31 | S: [#H6] Request for check timed out or stopped too soon | 
+Server Controller | Check amount availability| 32 | NP: [#H6][#H2] Not providing check for balance before withdraw | 
+Server Controller | Check amount availability| 33 | P: [#H6][#H2] Providing wrong check for balance | 
+Server Controller | Check amount availability| 34 | TE: [#H6][#H2] Providing check too late, out of order | 
+Server Controller | Check amount availability| 35 | S: [#H6][#H2] Providing check of balance too late | 
+Server Controller | Create audit reports| 36 | NP: [#H3] Not providing audit reports for analysis | 
+Server Controller | Create audit reports| 37 | P: [#H3] Providing incorrect audit report | 
+Server Controller | Create audit reports| 38 | TE: [#H3] Providing reports too late | 
+Server Controller | Perform delivery of donations| 39 | NP: [#H3][#H5] Not providing donation money to donatees | 
+Server Controller | Perform delivery of donations| 40 | P: [#H5][#H4] Money provided to wrong donatees, or more than once | 
+Server Controller | Perform delivery of donations| 41 | TE: [#H5][#H6] Donation money provided too late/without enough balance | 
+Server Controller | Perform delivery of donations| 42 | S: [#H4][#H5][#H2] Donation money provided to old donatees without updation | 
